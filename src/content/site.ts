@@ -4,8 +4,6 @@ export const site = {
   title: "HJSol | AI 컨설팅 · 사내 업무 시스템 구축",
   description: "HJSol은 AI 컨설팅과 사내 업무 시스템 구축을 통해 데이터, 사람, 업무를 연결합니다. HJSol 업무 지원 플랫폼과 LS-RND 연구개발 플랫폼을 만나보세요.",
   email: process.env.NEXT_PUBLIC_CONTACT_EMAIL?.trim() || "hjsoltec@gmail.com",
-  phone: "010-9378-8314",
-  phoneHref: "tel:+821093788314",
 };
 
 export const services = [

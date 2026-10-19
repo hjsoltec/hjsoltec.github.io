@@ -24,7 +24,7 @@ for (const pathname of paths) {
   const nodes = graphs.flatMap(g => g['@graph'] || [g]);
   const organization = nodes.find(n => n['@type'] === 'Organization');
   assert.equal(organization?.email, expectedEmail);
-  assert.equal(organization?.telephone, '010-9378-8314');
+  assert.equal(organization?.telephone, undefined);
   assert(nodes.some(n => n['@type'] === 'WebSite'));
   if (pathname.startsWith('/products/')) {
     assert(nodes.some(n => n['@type'] === 'Service'));

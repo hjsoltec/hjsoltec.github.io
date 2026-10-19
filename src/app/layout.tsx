@@ -14,6 +14,6 @@ export const metadata: Metadata = {
 };
 export const viewport: Viewport = { themeColor: "#121725", width: "device-width", initialScale: 1 };
 export default function RootLayout({ children }: { children: React.ReactNode }) {
-  const identity = { "@context": "https://schema.org", "@graph": [{ "@type": "Organization", "@id": `${site.url}/#organization`, name: site.name, url: site.url, description: site.description, ...(site.email ? { email: site.email } : {}), telephone: site.phone }, { "@type": "WebSite", "@id": `${site.url}/#website`, name: site.name, url: `${site.url}/`, inLanguage: "ko-KR", publisher: { "@id": `${site.url}/#organization` } }] };
+  const identity = { "@context": "https://schema.org", "@graph": [{ "@type": "Organization", "@id": `${site.url}/#organization`, name: site.name, url: site.url, description: site.description, ...(site.email ? { email: site.email } : {}) }, { "@type": "WebSite", "@id": `${site.url}/#website`, name: site.name, url: `${site.url}/`, inLanguage: "ko-KR", publisher: { "@id": `${site.url}/#organization` } }] };
   return <html lang="ko"><body><a className="skip-link" href="#main">본문 바로가기</a><Header /><main id="main">{children}</main><Footer /><JsonLd data={identity} /></body></html>;
 }
