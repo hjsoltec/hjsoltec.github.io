@@ -20,3 +20,8 @@ for (const r of data) {
 const email = (process.env.NEXT_PUBLIC_CONTACT_EMAIL || '').trim();
 if (email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) throw new Error('NEXT_PUBLIC_CONTACT_EMAIL is invalid');
 console.log(`PASS content: ${data.length} resources validated; contact ${email ? 'configured' : 'not yet configured (brief-only mode)'}`);
+
+for (const key of ['NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION','NEXT_PUBLIC_BING_SITE_VERIFICATION']) {
+  const value = (process.env[key] || '').trim();
+  if (value && (value.length > 512 || /[<>\s]/.test(value))) throw new Error(`${key}: enter the issued content value only`);
+}

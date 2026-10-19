@@ -40,6 +40,7 @@ export function Footer() {
               <Link href="/products/hjsol/">HJSol</Link>
               <Link href="/products/ls-rnd/">LS-RND</Link>
               <Link href="/resources/">자료실</Link>
+              <Link href="/guides/">활용 가이드</Link>
             </div>
             <div className="footer-contact">
               <span id="footer-contact-heading">CONTACT / 연락처</span>

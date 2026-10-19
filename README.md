@@ -61,3 +61,7 @@ Vercel Hobby 무료 플랜은 비상업적 개인 용도에 제한됩니다. Git
 ## 코드와 공개 자료의 범위
 
 이 프로젝트에는 홍보용 웹사이트만 포함되어 있습니다. HJSol·LS-RND 업무 시스템의 실행 소스, 데이터베이스, 환경 설정, 고객 자료는 포함하지 않았습니다. 기능 설명은 알려진 프로젝트 범위에 근거한 소개 초안입니다. 정량 성능, 고객 추천사, 인증, 가격은 임의로 작성하지 않았습니다.
+
+## v1.0.3 SEO/GEO 보완
+
+연락처·본문 폰트 확대를 포함한 수정본입니다. 적용·Google/Bing 등록은 [SEO_GEO_SETUP_KO.md](docs/SEO_GEO_SETUP_KO.md), 변경 범위와 검증은 [SEO_GEO_CHANGELOG.md](docs/SEO_GEO_CHANGELOG.md), [SEO_GEO_VALIDATION.md](docs/SEO_GEO_VALIDATION.md)를 확인하세요.

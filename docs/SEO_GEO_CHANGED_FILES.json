@@ -1,0 +1,39 @@
+{
+  "baseline": "v1.0.2 Materials + Contact/Font Update",
+  "version": "1.0.3",
+  "baselineFilesRetained": 70,
+  "modified": [
+    ".env.example",
+    ".github/workflows/pages.yml",
+    "README.md",
+    "package-lock.json",
+    "package.json",
+    "scripts/validate-content.mjs",
+    "src/app/about/page.tsx",
+    "src/app/contact/page.tsx",
+    "src/app/globals.css",
+    "src/app/layout.tsx",
+    "src/app/privacy/page.tsx",
+    "src/app/products/[slug]/page.tsx",
+    "src/app/resources/page.tsx",
+    "src/app/sitemap.ts",
+    "src/app/solutions/page.tsx",
+    "src/components/Shell.tsx"
+  ],
+  "added": [
+    "docs/SEO_GEO_BEFORE_AUDIT.json",
+    "docs/SEO_GEO_CHANGED_FILES.json",
+    "docs/SEO_GEO_CHANGELOG.md",
+    "docs/SEO_GEO_SETUP_KO.md",
+    "docs/SEO_GEO_VALIDATION.md",
+    "scripts/verify-seo.mjs",
+    "src/app/guides/[slug]/page.tsx",
+    "src/app/guides/page.tsx",
+    "src/components/Faq.tsx",
+    "src/components/JsonLd.tsx",
+    "src/content/discovery.ts",
+    "src/lib/seo.ts"
+  ],
+  "unchangedPublicResourceShowcaseFiles": 29,
+  "operatingSiteUpdated": false
+}

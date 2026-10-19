@@ -1,0 +1,24 @@
+{
+  "dateKST": "2026-10-19",
+  "publicOrigin": "https://hjsoltec.github.io",
+  "homeHttpStatus": 200,
+  "robotsHttpStatus": 200,
+  "sitemapHttpStatus": 200,
+  "wildcardCrawlerAccessAlreadyAllowed": true,
+  "existingSitemapUrls": 10,
+  "productPages": [
+    {
+      "path": "/products/hjsol/",
+      "status": 200,
+      "ogUrl": "https://hjsoltec.github.io/",
+      "jsonLdScripts": 1
+    },
+    {
+      "path": "/products/ls-rnd/",
+      "status": 200,
+      "ogUrl": "https://hjsoltec.github.io/",
+      "jsonLdScripts": 1
+    }
+  ],
+  "afterDeploymentVerified": false
+}
