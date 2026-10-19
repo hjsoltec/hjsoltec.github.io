@@ -1,0 +1,36 @@
+{
+  "version": "1.0.2",
+  "date": "2026-10-19",
+  "files": [
+    {
+      "path": "/downloads/hjsol-brochure-ko.pdf",
+      "bytes": 51374,
+      "sha256": "8fb23344802eaf3c954bd07795c092f65a9796bb30ea2bc5f1d6cb1020deb258"
+    },
+    {
+      "path": "/downloads/hjsol-product-overview-ko.pdf",
+      "bytes": 32569,
+      "sha256": "5deb09d1e5b6bca0051b6b12d76014ed0f89ef6eedbf57a2962904c86ebc29e7"
+    },
+    {
+      "path": "/downloads/rd-studio-brochure-ko.pdf",
+      "bytes": 6798979,
+      "sha256": "df38ffdf39cecce4f82df5c8da94ab454090f6db17f2d8f8aeec56c9074ce76a"
+    },
+    {
+      "path": "/downloads/rd-studio-brochure-ko.pptx",
+      "bytes": 2882367,
+      "sha256": "1d745d7200a5647fea113cf68c53bb35c97949787023733059e37f4b16f48600"
+    },
+    {
+      "path": "/downloads/rd-studio-user-manual-ko.pdf",
+      "bytes": 2356154,
+      "sha256": "a4e04b51bb9e2b8753abd1938a0d12be37408dc32d796d4264c98d43c5375ef6"
+    },
+    {
+      "path": "/downloads/rd-studio-user-manual-ko.pptx",
+      "bytes": 2218896,
+      "sha256": "829d1add6e364896ae592796c05d614f25d1fbd3dae8f17a8daad51ce8e1ee87"
+    }
+  ]
+}

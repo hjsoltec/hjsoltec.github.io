@@ -1,0 +1,147 @@
+[
+  {
+    "id": "hjsol-brochure",
+    "title": "HJSol 제품 브로셔",
+    "description": "업무·커머스 운영, AI Agent RPA, AI 검색과 GEO 성과 관리의 구성을 소개합니다.",
+    "product": "hjsol",
+    "kind": "브로셔",
+    "status": "ready",
+    "href": "/downloads/hjsol-brochure-ko.pdf",
+    "download": true,
+    "preview": "/downloads/hjsol-brochure-ko.pdf",
+    "format": "PDF · 4쪽",
+    "cover": "/images/resources/hjsol-brochure-cover.png"
+  },
+  {
+    "id": "rnd-brochure",
+    "title": "소재 연구 플랫폼 브로셔",
+    "description": "LS-RND 기반 제품을 R&D Studio 표기로 소개한 기존 브로셔입니다. 연구 흐름과 기능 설명을 담았습니다.",
+    "product": "ls-rnd",
+    "kind": "브로셔",
+    "status": "ready",
+    "href": "/downloads/rd-studio-brochure-ko.pdf",
+    "download": true,
+    "preview": "/downloads/rd-studio-brochure-ko.pdf",
+    "format": "PDF · 10쪽",
+    "cover": "/showcase/rd-studio/assets/brochure-cover.png"
+  },
+  {
+    "id": "rnd-manual",
+    "title": "소재 연구 플랫폼 사용자 매뉴얼",
+    "description": "데이터셋 준비부터 학습·예측·문헌·검토·시험 초안까지 안내하는 R&D Studio 자료입니다.",
+    "product": "ls-rnd",
+    "kind": "매뉴얼",
+    "status": "ready",
+    "href": "/downloads/rd-studio-user-manual-ko.pdf",
+    "download": true,
+    "preview": "/downloads/rd-studio-user-manual-ko.pdf",
+    "format": "PDF · 18쪽",
+    "cover": "/showcase/rd-studio/assets/manual-cover.png"
+  },
+  {
+    "id": "hjsol-summary",
+    "title": "HJSol 제품 요약 소개",
+    "description": "주요 기능과 도입 검토 항목을 한 장으로 확인할 수 있는 소개 자료입니다.",
+    "product": "hjsol",
+    "kind": "제품 소개",
+    "status": "ready",
+    "href": "/downloads/hjsol-product-overview-ko.pdf",
+    "download": true,
+    "preview": "/downloads/hjsol-product-overview-ko.pdf",
+    "format": "PDF · 1쪽"
+  },
+  {
+    "id": "rnd-brochure-pptx",
+    "title": "소재 연구 플랫폼 브로셔 원본",
+    "description": "R&D Studio 제품 소개 브로셔의 편집 가능한 PowerPoint 원본입니다.",
+    "product": "ls-rnd",
+    "kind": "브로셔",
+    "status": "ready",
+    "href": "/downloads/rd-studio-brochure-ko.pptx",
+    "download": true,
+    "format": "PowerPoint · 10장"
+  },
+  {
+    "id": "rnd-manual-pptx",
+    "title": "소재 연구 플랫폼 매뉴얼 원본",
+    "description": "R&D Studio 화면별 사용자 매뉴얼의 편집 가능한 PowerPoint 원본입니다.",
+    "product": "ls-rnd",
+    "kind": "매뉴얼",
+    "status": "ready",
+    "href": "/downloads/rd-studio-user-manual-ko.pptx",
+    "download": true,
+    "format": "PowerPoint · 18장"
+  },
+  {
+    "id": "rnd-showcase",
+    "title": "소재 연구 플랫폼 화면 소개",
+    "description": "기능 설명용 화면과 가상 예시로 구성한 R&D Studio 상품 소개 페이지입니다.",
+    "product": "ls-rnd",
+    "kind": "화면 소개",
+    "status": "ready",
+    "href": "/showcase/rd-studio/",
+    "download": false,
+    "format": "웹 소개"
+  },
+  {
+    "id": "rnd-web-guide",
+    "title": "소재 연구 플랫폼 화면별 가이드",
+    "description": "재구성한 화면으로 데이터셋 선택·학습·예측·검토·시험 초안의 사용 순서를 살펴봅니다.",
+    "product": "ls-rnd",
+    "kind": "웹 가이드",
+    "status": "ready",
+    "href": "/showcase/rd-studio/guide.html",
+    "download": false,
+    "format": "웹 가이드"
+  },
+  {
+    "id": "hjsol-overview",
+    "title": "HJSol 기능 살펴보기",
+    "description": "업무·커머스와 AI 활용의 기본 구성을 웹에서 확인하세요.",
+    "product": "hjsol",
+    "kind": "웹 가이드",
+    "status": "ready",
+    "href": "/products/hjsol/",
+    "download": false
+  },
+  {
+    "id": "rnd-overview",
+    "title": "LS-RND 기능 살펴보기",
+    "description": "실험 데이터부터 시험평가로 이어지는 흐름을 확인하세요.",
+    "product": "ls-rnd",
+    "kind": "웹 가이드",
+    "status": "ready",
+    "href": "/products/ls-rnd/",
+    "download": false
+  },
+  {
+    "id": "delivery-guide",
+    "title": "AI 도입은 어떻게 진행되나요?",
+    "description": "업무 진단, 검증, 구축, 운영의 네 단계를 소개합니다.",
+    "product": "company",
+    "kind": "웹 가이드",
+    "status": "ready",
+    "href": "/solutions/#delivery",
+    "download": false
+  },
+  {
+    "id": "company-brochure",
+    "title": "HJSol 회사 소개 브로셔",
+    "description": "회사 비전과 AI 컨설팅·업무 시스템 구축 서비스를 소개합니다.",
+    "product": "company",
+    "kind": "브로셔",
+    "status": "preparing",
+    "href": "",
+    "download": false
+  },
+  {
+    "id": "hjsol-manual",
+    "title": "HJSol 사용자 매뉴얼",
+    "description": "제품 전체 사용 흐름을 안내하는 별도 사용자 매뉴얼은 준비 중입니다.",
+    "product": "hjsol",
+    "kind": "매뉴얼",
+    "status": "preparing",
+    "href": "",
+    "download": false
+  }
+]
