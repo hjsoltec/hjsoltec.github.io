@@ -39,9 +39,19 @@ for (const pathname of paths) {
 }
 const sitemap = fs.readFileSync('out/sitemap.xml', 'utf8');
 for (const pathname of [...paths, '/showcase/rd-studio/', '/showcase/rd-studio/guide.html']) assert(sitemap.includes(`<loc>${origin}${pathname}</loc>`), `Sitemap ${pathname}`);
-assert.equal((sitemap.match(/<loc>/g) || []).length, 13);
+const sitemapUrls = [...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map(match => match[1]);
+const documentUrls = JSON.parse(fs.readFileSync('src/content/resources.json', 'utf8'))
+  .filter(resource => resource.status === 'ready' && resource.download && /\.(?:pdf|docx)$/i.test(resource.href))
+  .map(resource => origin + resource.href);
+assert.equal(new Set(sitemapUrls).size, sitemapUrls.length, 'No duplicate sitemap URLs');
+assert.deepEqual(new Set(sitemapUrls), new Set([
+  ...paths.map(pathname => origin + pathname),
+  origin + '/showcase/rd-studio/',
+  origin + '/showcase/rd-studio/guide.html',
+  ...documentUrls,
+]), 'Sitemap contains the public pages and published PDF/Word documents');
 const robots = fs.readFileSync('out/robots.txt', 'utf8');
 assert(/User-Agent: \*/i.test(robots) && /Allow: \//.test(robots));
 assert(robots.includes(`Sitemap: ${origin}/sitemap.xml`));
 assert(!/Disallow:\s*\/\s*$/m.test(robots));
-console.log(`PASS SEO export: ${paths.length} pages, canonical/OG/description/H1, valid JSON-LD, visible FAQs, 2 guides, 13 sitemap URLs, crawler access and public contacts`);
+console.log(`PASS SEO export: ${paths.length} pages, canonical/OG/description/H1, valid JSON-LD, visible FAQs, 2 guides, ${sitemapUrls.length} sitemap URLs, crawler access and public contacts`);

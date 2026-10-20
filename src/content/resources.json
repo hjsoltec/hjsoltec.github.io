@@ -115,6 +115,28 @@
     "download": false
   },
   {
+    "id": "hj-ai-platform-transition-report",
+    "title": "HJ AI플랫폼 전환방향 보고서",
+    "description": "Spring 기반 업무 시스템에 AI Agent를 연결하는 공통 구조, 권한·지식 관리와 단계별 도입 방향을 정리한 보고서입니다.",
+    "product": "company",
+    "kind": "보고서",
+    "status": "ready",
+    "download": true,
+    "format": "Word · DOCX",
+    "href": "/downloads/hj-ai-platform-transition-report-ko.docx"
+  },
+  {
+    "id": "hj-devops-developer-environment-setup-guide",
+    "title": "HJ 개발운영인프라·개발자환경 구축절차서",
+    "description": "Windows·WSL 및 Linux 환경에서 개발 도구, DB, 모델 연결, CI·배포·백업을 준비하는 순서를 안내합니다.",
+    "product": "company",
+    "kind": "구축 절차서",
+    "status": "ready",
+    "download": true,
+    "format": "Word · DOCX",
+    "href": "/downloads/hj-devops-developer-environment-setup-guide-ko.docx"
+  },
+  {
     "id": "delivery-guide",
     "title": "AI 도입은 어떻게 진행되나요?",
     "description": "업무 진단, 검증, 구축, 운영의 네 단계를 소개합니다.",

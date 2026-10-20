@@ -21,7 +21,7 @@ export function ResourceLibrary() {
   }
   return <>
     <div className="resource-toolbar"><div className="filter-list" role="group" aria-label="자료 분류">{filters.map(f => <button key={f.value} type="button" aria-pressed={f.value === filter} onClick={() => changeFilter(f.value)}>{f.label}</button>)}</div><label className="search-field"><Icon name="search" size={19} /><input type="search" aria-label="자료 검색" placeholder="필요한 자료를 검색하세요" value={query} onChange={e => setQuery(e.target.value)} /></label></div>
-    <div className="resource-count" aria-live="polite">{visible.length}개의 자료 <span>PDF · PowerPoint · 제품 화면 소개를 확인하세요.</span></div>
+    <div className="resource-count" aria-live="polite">{visible.length}개의 자료 <span>PDF · Word · PowerPoint · 제품 화면 소개를 확인하세요.</span></div>
     <div className="resource-grid">{visible.map(r => <article className="resource-card" key={r.id}>
       {r.cover && <div className="resource-cover"><img src={r.cover} alt={`${r.title} 표지`} width={480} height={270} loading="lazy" /></div>}
       <div className="resource-card-top"><span className={`resource-type resource-type-${r.product}`}><Icon name={r.kind === "매뉴얼" ? "layers" : "file"} size={23} /></span><span className={`status ${r.status === "ready" ? "status-ready" : ""}`}>{r.status === "ready" ? "공개" : "준비 중"}</span></div>
