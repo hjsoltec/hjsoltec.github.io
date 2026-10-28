@@ -1,3 +1,4 @@
+import { BrandMark } from "./Brand";
 import type { CSSProperties } from "react";
 const paths: Record<string, React.ReactNode> = {
   arrow: <><path d="M5 12h14M13 6l6 6-6 6" /></>,
@@ -25,5 +26,5 @@ export function Icon({ name, size = 24, className = "", style }: { name: string;
   return <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.65" strokeLinecap="round" strokeLinejoin="round" className={className} style={style} aria-hidden="true">{paths[name] || paths.sparkles}</svg>;
 }
 export function Logo({ light = false }: { light?: boolean }) {
-  return <span className={`logo ${light ? "logo-light" : ""}`}><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path d="M4 3h7v10h8V3h7v24h-7V18h-8v9H4Z" fill="currentColor" /><path d="m15 0 4 6-4 6-4-6Z" fill="#5d7bff" /></svg><span>HJSol<span className="logo-dot">.</span></span></span>;
+  return <span className={`logo-image ${light ? "logo-image-light" : ""}`}><BrandMark /></span>;
 }

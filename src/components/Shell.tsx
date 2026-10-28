@@ -5,7 +5,7 @@ import { useEffect, useRef, useState } from "react";
 import { Icon, Logo } from "./Icons";
 import { site } from "@/content/site";
 
-const navigation = [{ label: "회사 소개", href: "/about/" }, { label: "구축 서비스", href: "/solutions/" }, { label: "제품", href: "/#products" }, { label: "자료실", href: "/resources/" }];
+const navigation = [{ label: "솔루션", href: "/#products" }, { label: "기술·서비스", href: "/solutions/" }, { label: "자료실", href: "/resources/" }, { label: "회사 소개", href: "/about/" }];
 export function Header() {
   const [open, setOpen] = useState(false);
   const path = usePathname();
@@ -13,8 +13,8 @@ export function Header() {
   useEffect(() => { setOpen(false); }, [path]);
   return <header className="site-header"><div className="container header-inner"><Link href="/" aria-label="HJSol 홈" className="brand"><Logo /></Link>
     <nav aria-label="주 메뉴" id="main-menu" className={`nav ${open ? "nav-open" : ""}`} onKeyDown={e => { if (e.key === "Escape") { setOpen(false); button.current?.focus(); } }}>
-      {navigation.map(item => <Link key={item.href} href={item.href} onClick={() => setOpen(false)} aria-current={path === item.href || (item.label === "제품" && path.startsWith("/products/")) ? "page" : undefined}>{item.label}</Link>)}
-      <Link href="/contact/" className="nav-cta" onClick={() => setOpen(false)}>프로젝트 이야기하기 <Icon name="diagonal" size={16} /></Link>
+      {navigation.map(item => <Link key={item.href} href={item.href} onClick={() => setOpen(false)} aria-current={path === item.href || (item.label === "솔루션" && path.startsWith("/products/")) ? "page" : undefined}>{item.label}</Link>)}
+      <Link href="/contact/" className="nav-cta" onClick={() => setOpen(false)}>도입 문의 <Icon name="diagonal" size={16} /></Link>
     </nav><button ref={button} type="button" className="menu-toggle" aria-label={open ? "메뉴 닫기" : "메뉴 열기"} aria-expanded={open} aria-controls="main-menu" onClick={() => setOpen(!open)}><Icon name={open ? "close" : "menu"} /></button>
   </div></header>;
 }
@@ -25,8 +25,8 @@ export function Footer() {
         <div className="footer-top">
           <div>
             <Link href="/" aria-label="HJSol 홈"><Logo light /></Link>
-            <p>AI를 기술에서, 업무의 힘으로.</p>
-            <span className="footer-small">AI consulting & business systems</span>
+            <p>AI로 연결하고, AX로 완성합니다.</p>
+            <span className="footer-small">AI solutions for work, operations & research</span>
           </div>
           <div className="footer-nav">
             <div>
@@ -37,8 +37,9 @@ export function Footer() {
             </div>
             <div>
               <span>PRODUCTS</span>
-              <Link href="/products/hjsol/">HJSol</Link>
-              <Link href="/products/ls-rnd/">LS-RND</Link>
+              <Link href="/products/hjsol-aieg/">HJSolAIEG</Link>
+              <Link href="/products/hjsol/">HJSolAISP</Link>
+              <Link href="/products/ls-rnd/">HJSolAIRND</Link>
               <Link href="/resources/">자료실</Link>
               <Link href="/guides/">활용 가이드</Link>
             </div>

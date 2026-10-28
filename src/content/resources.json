@@ -1,8 +1,44 @@
 [
   {
+    "id": "airnd-introduction",
+    "title": "HJSolAIRND 솔루션 소개",
+    "description": "AI 화학 연구·분석 솔루션의 주요 기능과 활용 업무를 확인하세요.",
+    "product": "ls-rnd",
+    "kind": "제품 소개",
+    "status": "ready",
+    "href": "/products/ls-rnd/",
+    "download": false,
+    "format": "웹",
+    "cover": "/brand/airnd-intro.png"
+  },
+  {
+    "id": "aisp-introduction",
+    "title": "HJSolAISP 솔루션 소개",
+    "description": "AI 통합 운영 솔루션의 주요 기능과 활용 업무를 확인하세요.",
+    "product": "hjsol",
+    "kind": "제품 소개",
+    "status": "ready",
+    "href": "/products/hjsol/",
+    "download": false,
+    "format": "웹",
+    "cover": "/brand/aisp-intro.png"
+  },
+  {
+    "id": "aieg-introduction",
+    "title": "HJSolAIEG 솔루션 소개",
+    "description": "AI 전자정부 프레임워크의 주요 기능과 활용 업무를 확인하세요.",
+    "product": "hjsol-aieg",
+    "kind": "제품 소개",
+    "status": "ready",
+    "href": "/products/hjsol-aieg/",
+    "download": false,
+    "format": "웹",
+    "cover": "/brand/aieg-intro.png"
+  },
+  {
     "id": "hjsol-brochure",
     "title": "HJSol 제품 브로셔",
-    "description": "업무·커머스 운영, AI Agent RPA, AI 검색과 GEO 성과 관리의 구성을 소개합니다.",
+    "description": "기존 HJSol 버전 자료입니다. 업무·커머스 운영, AI Agent RPA, AI 검색과 GEO 성과 관리의 구성을 소개합니다.",
     "product": "hjsol",
     "kind": "브로셔",
     "status": "ready",
@@ -41,7 +77,7 @@
   {
     "id": "hjsol-summary",
     "title": "HJSol 제품 요약 소개",
-    "description": "주요 기능과 도입 검토 항목을 한 장으로 확인할 수 있는 소개 자료입니다.",
+    "description": "기존 HJSol 버전 자료입니다. 주요 기능과 도입 검토 항목을 한 장으로 확인할 수 있는 소개 자료입니다.",
     "product": "hjsol",
     "kind": "제품 소개",
     "status": "ready",
@@ -97,7 +133,7 @@
   {
     "id": "hjsol-overview",
     "title": "HJSol 기능 살펴보기",
-    "description": "업무·커머스와 AI 활용의 기본 구성을 웹에서 확인하세요.",
+    "description": "기존 HJSol 버전 자료입니다. 업무·커머스와 AI 활용의 기본 구성을 웹에서 확인하세요.",
     "product": "hjsol",
     "kind": "웹 가이드",
     "status": "ready",
@@ -159,7 +195,7 @@
   {
     "id": "hjsol-manual",
     "title": "HJSol 사용자 매뉴얼",
-    "description": "제품 전체 사용 흐름을 안내하는 별도 사용자 매뉴얼은 준비 중입니다.",
+    "description": "기존 HJSol 버전 자료입니다. 제품 전체 사용 흐름을 안내하는 별도 사용자 매뉴얼은 준비 중입니다.",
     "product": "hjsol",
     "kind": "매뉴얼",
     "status": "preparing",

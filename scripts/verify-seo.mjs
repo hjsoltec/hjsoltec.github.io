@@ -2,7 +2,7 @@ import fs from 'node:fs';
 import assert from 'node:assert/strict';
 
 const origin = 'https://hjsoltec.github.io';
-const paths = ['/', '/about/', '/solutions/', '/products/hjsol/', '/products/ls-rnd/', '/resources/', '/contact/', '/privacy/', '/guides/', '/guides/ai-workflow-automation/', '/guides/materials-rd-ai/'];
+const paths = ['/', '/about/', '/solutions/', '/products/hjsol-aieg/', '/products/hjsol/', '/products/ls-rnd/', '/resources/', '/contact/', '/privacy/', '/guides/', '/guides/ai-workflow-automation/', '/guides/materials-rd-ai/'];
 const attributes = tag => Object.fromEntries([...tag.matchAll(/([^\s=<>]+)="([^"]*)"/g)].map(m => [m[1],m[2]]));
 const meta = (html, key) => [...html.matchAll(/<meta\b[^>]*>/g)].map(m => attributes(m[0])).find(a => a.name === key || a.property === key)?.content;
 const titles = new Set();

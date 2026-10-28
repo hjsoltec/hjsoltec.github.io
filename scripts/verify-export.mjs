@@ -25,7 +25,7 @@ for (const page of pages) {
     checked++;
   }
 }
-for (const p of ['index.html','about/index.html','solutions/index.html','products/hjsol/index.html','products/ls-rnd/index.html','resources/index.html','contact/index.html','privacy/index.html','404.html','sitemap.xml','robots.txt','.nojekyll']) if(!fs.existsSync(path.join(root,p))) failures.push(`Required export missing: ${p}`);
+for (const p of ['index.html','about/index.html','solutions/index.html','products/hjsol-aieg/index.html','products/hjsol/index.html','products/ls-rnd/index.html','resources/index.html','contact/index.html','privacy/index.html','404.html','sitemap.xml','robots.txt','.nojekyll']) if(!fs.existsSync(path.join(root,p))) failures.push(`Required export missing: ${p}`);
 const resources=JSON.parse(fs.readFileSync('src/content/resources.json','utf8'));
 for(const r of resources.filter(r=>r.status==='ready')) { const pathname=r.href.split(/[?#]/)[0]; let f=path.join(root,pathname); if(fs.existsSync(f)&&fs.statSync(f).isDirectory()) f=path.join(f,'index.html'); if(!fs.existsSync(f)) failures.push(`Resource missing: ${r.id}`); }
 if(failures.length) { console.error(failures.join('\n'));process.exit(1); }

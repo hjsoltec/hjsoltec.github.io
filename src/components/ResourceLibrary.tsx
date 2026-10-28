@@ -6,7 +6,7 @@ import resources from "@/content/resources.json";
 
 type Resource = { id: string; title: string; description: string; product: string; kind: string; status: "ready" | "preparing"; href: string; download: boolean; preview?: string; format?: string; cover?: string };
 const catalog = resources as Resource[];
-const filters = [{ value: "all", label: "전체 자료" }, { value: "company", label: "회사 소개" }, { value: "hjsol", label: "HJSol" }, { value: "ls-rnd", label: "LS-RND" }];
+const filters = [{ value: "all", label: "전체 자료" }, { value: "company", label: "회사 소개" }, { value: "hjsol-aieg", label: "HJSolAIEG" }, { value: "hjsol", label: "HJSolAISP" }, { value: "ls-rnd", label: "HJSolAIRND" }];
 
 export function ResourceLibrary() {
   const [filter, setFilter] = useState("all");
@@ -20,12 +20,13 @@ export function ResourceLibrary() {
     window.history.replaceState(null, "", u.pathname + u.search);
   }
   return <>
+    <p className="resource-brand-note">새 브랜드의 솔루션 소개와 기존 버전 자료를 함께 제공합니다. 기존 문서에는 HJSol·LS-RND·R&D Studio 명칭이 포함되어 있습니다.</p>
     <div className="resource-toolbar"><div className="filter-list" role="group" aria-label="자료 분류">{filters.map(f => <button key={f.value} type="button" aria-pressed={f.value === filter} onClick={() => changeFilter(f.value)}>{f.label}</button>)}</div><label className="search-field"><Icon name="search" size={19} /><input type="search" aria-label="자료 검색" placeholder="필요한 자료를 검색하세요" value={query} onChange={e => setQuery(e.target.value)} /></label></div>
     <div className="resource-count" aria-live="polite">{visible.length}개의 자료 <span>PDF · Word · PowerPoint · 제품 화면 소개를 확인하세요.</span></div>
     <div className="resource-grid">{visible.map(r => <article className="resource-card" key={r.id}>
       {r.cover && <div className="resource-cover"><img src={r.cover} alt={`${r.title} 표지`} width={480} height={270} loading="lazy" /></div>}
       <div className="resource-card-top"><span className={`resource-type resource-type-${r.product}`}><Icon name={r.kind === "매뉴얼" ? "layers" : "file"} size={23} /></span><span className={`status ${r.status === "ready" ? "status-ready" : ""}`}>{r.status === "ready" ? "공개" : "준비 중"}</span></div>
-      <span className="micro-label">{r.product === "company" ? "HJSOL COMPANY" : r.product === "hjsol" ? "HJSOL PLATFORM" : "LS-RND"} · {r.kind}{r.format ? ` · ${r.format}` : ""}</span>
+      <span className="micro-label">{r.product === "company" ? "HJSOL COMPANY" : r.product === "hjsol-aieg" ? "HJSolAIEG" : r.product === "hjsol" ? "HJSolAISP" : "HJSolAIRND"} · {r.kind}{r.format ? ` · ${r.format}` : ""}</span>
       <h2>{r.title}</h2><p>{r.description}</p>
       {r.status === "ready" ? <div className="resource-file-actions">
         {r.preview && <a href={r.preview} className="resource-view" target="_blank" rel="noopener noreferrer" aria-label={`${r.title} PDF 새 창에서 보기`}>PDF 열기 <Icon name="diagonal" size={16} /></a>}

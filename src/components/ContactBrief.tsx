@@ -1,13 +1,13 @@
 "use client";
 import { useEffect, useRef, useState, type FormEvent } from "react";
 import { Icon } from "./Icons";
-const choices = ["AI 컨설팅", "사내 업무 시스템 구축", "HJSol 도입", "LS-RND 도입", "기타 / 함께 논의"];
+const choices = ["AI 컨설팅", "사내 업무 시스템 구축", "HJSolAIEG 도입", "HJSolAISP 도입", "HJSolAIRND 도입", "기타 / 함께 논의"];
 export function ContactBrief({ email }: { email: string }) {
   const [service, setService] = useState(choices[0]);
   const [result, setResult] = useState("");
   const [message, setMessage] = useState("");
   const output = useRef<HTMLDivElement>(null);
-  useEffect(() => { const product = new URLSearchParams(window.location.search).get("product"); if (product === "hjsol") setService("HJSol 도입"); if (product === "ls-rnd") setService("LS-RND 도입"); }, []);
+  useEffect(() => { const product = new URLSearchParams(window.location.search).get("product"); if (product === "hjsol-aieg") setService("HJSolAIEG 도입"); if (product === "hjsol") setService("HJSolAISP 도입"); if (product === "ls-rnd") setService("HJSolAIRND 도입"); }, []);
   function generate(e: FormEvent<HTMLFormElement>) { e.preventDefault(); const data = new FormData(e.currentTarget); const text = ["HJSol 프로젝트 상담 요청서", "", `관심 분야: ${service}`, `회사 / 조직: ${String(data.get("company") || "미기재").trim()}`, `담당자: ${String(data.get("name") || "").trim()}`, `회신 이메일: ${String(data.get("email") || "").trim()}`, "", "해결하고 싶은 업무", String(data.get("needs") || "").trim(), "", "현재 데이터와 운영 환경", String(data.get("environment") || "미기재").trim(), "", "※ 이 문서는 브라우저에서 작성되었으며 HJSol에 자동 전송되지 않았습니다."].join("\n"); setResult(text); setMessage(""); requestAnimationFrame(() => output.current?.focus()); }
   function download() { const url = URL.createObjectURL(new Blob(["\ufeff" + result], { type: "text/plain;charset=utf-8" })); const link = document.createElement("a"); link.href = url; link.download = "HJSol-project-brief.txt"; document.body.appendChild(link); link.click(); link.remove(); setTimeout(() => URL.revokeObjectURL(url), 1000); setMessage("요청서 파일을 저장했습니다. 아직 발송되지는 않았습니다."); }
   async function copy() { try { await navigator.clipboard.writeText(result); setMessage("요청서를 복사했습니다. 원하는 연락 수단에 붙여 넣을 수 있습니다."); } catch { setMessage("복사 기능을 사용할 수 없습니다. 아래 요청서 내용을 직접 선택해 복사하거나 파일로 저장해 주세요."); } }

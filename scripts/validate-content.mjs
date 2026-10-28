@@ -5,7 +5,7 @@ const ids = new Set();
 for (const r of data) {
   if (!r.id || ids.has(r.id)) throw new Error(`Missing or duplicate resource id: ${r.id}`);
   ids.add(r.id);
-  if (!['company', 'hjsol', 'ls-rnd'].includes(r.product)) throw new Error(`Unknown product: ${r.id}`);
+  if (!['company', 'hjsol-aieg', 'hjsol', 'ls-rnd'].includes(r.product)) throw new Error(`Unknown product: ${r.id}`);
   if (!['preparing', 'ready'].includes(r.status)) throw new Error(`Unknown status: ${r.id}`);
   if (!r.title?.trim() || !r.description?.trim()) throw new Error(`Missing resource copy: ${r.id}`);
   if (r.status === 'preparing' && (r.href || r.download)) throw new Error(`Preparing resource must have empty href and download=false: ${r.id}`);
@@ -19,7 +19,7 @@ for (const r of data) {
 }
 const email = (process.env.NEXT_PUBLIC_CONTACT_EMAIL || '').trim();
 if (email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) throw new Error('NEXT_PUBLIC_CONTACT_EMAIL is invalid');
-console.log(`PASS content: ${data.length} resources validated; contact ${email ? 'configured' : 'not yet configured (brief-only mode)'}`);
+console.log(`PASS content: ${data.length} resources validated; contact ${email ? 'configured by environment' : 'default public address'}`);
 
 for (const key of ['NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION','NEXT_PUBLIC_BING_SITE_VERIFICATION']) {
   const value = (process.env[key] || '').trim();

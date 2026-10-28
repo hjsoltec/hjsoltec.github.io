@@ -5,8 +5,8 @@ export function pageMetadata(title: string, description: string, path: string): 
   const url = `${site.url}${path}`;
   return {
     title, description, alternates: { canonical: url },
-    openGraph: { title, description, url, siteName: site.name, locale: "ko_KR", type: "website", images: [{ url: `${site.url}/og.png`, width: 1200, height: 630, alt: title }] },
-    twitter: { card: "summary_large_image", title, description, images: [`${site.url}/og.png`] },
+    openGraph: { title, description, url, siteName: site.name, locale: "ko_KR", type: "website", images: [{ url: `${site.url}/brand/hjsol-intro.png`, width: 1672, height: 941, alt: title }] },
+    twitter: { card: "summary_large_image", title, description, images: [`${site.url}/brand/hjsol-intro.png`] },
   };
 }
 
