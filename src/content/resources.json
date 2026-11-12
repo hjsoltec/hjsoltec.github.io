@@ -1,12 +1,86 @@
 [
   {
+    "id": "hjsolai-brochure-20261110",
+    "title": "HJSolAI 통합 기능별 브로셔",
+    "description": "HJSolAISP·HJSolAIRND·HJSolAIEG의 패키지 개요와 화면별 기능 설명을 담은 최신 브로셔입니다.",
+    "product": "company",
+    "products": [
+      "hjsol",
+      "ls-rnd",
+      "hjsol-aieg"
+    ],
+    "kind": "브로셔",
+    "status": "ready",
+    "href": "/downloads/hjsolai-brochure-20261110.pdf",
+    "download": true,
+    "preview": "/downloads/hjsolai-brochure-20261110.pdf",
+    "format": "PDF · 116쪽 · 2026-11-10",
+    "cover": "/images/brochure/aisp-overview.png"
+  },
+  {
+    "id": "hjsolai-brochure-pptx-20261110",
+    "title": "HJSolAI 기능별 브로셔 원본",
+    "description": "첨부하신 PowerPoint 편집본 원본입니다. 세 패키지의 기능 설명과 실제 화면을 포함합니다.",
+    "product": "company",
+    "products": [
+      "hjsol",
+      "ls-rnd",
+      "hjsol-aieg"
+    ],
+    "kind": "브로셔",
+    "status": "ready",
+    "href": "/downloads/hjsolai-brochure-20261110.pptx",
+    "download": true,
+    "preview": "/downloads/hjsolai-brochure-20261110.pdf",
+    "format": "PowerPoint · 116쪽 · 원본"
+  },
+  {
+    "id": "aisp-brochure-20261110",
+    "title": "HJSolAISP 기능별 브로셔",
+    "description": "서버·GPU·DB 모니터링, 슬로우쿼리·경고 AI 분석, Linux·Windows 원격접속과 AI 업무 지원을 화면별로 확인합니다. 통합 브로셔에서 제품별로 나눈 PDF입니다.",
+    "product": "hjsol",
+    "kind": "브로셔",
+    "status": "ready",
+    "href": "/downloads/hjsolaisp-brochure-20261110.pdf",
+    "download": true,
+    "preview": "/downloads/hjsolaisp-brochure-20261110.pdf",
+    "format": "PDF · 55쪽 · 2026-11-10",
+    "cover": "/images/brochure/aisp-overview.png"
+  },
+  {
+    "id": "airnd-brochure-20261110",
+    "title": "HJSolAIRND 기능별 브로셔",
+    "description": "시험평가·작업지시서, 학습·예측·미세증분, SHAP·TDS와 논문·특허·사내 보고서를 화면별로 확인합니다. 통합 브로셔에서 제품별로 나눈 PDF입니다.",
+    "product": "ls-rnd",
+    "kind": "브로셔",
+    "status": "ready",
+    "href": "/downloads/hjsolairnd-brochure-20261110.pdf",
+    "download": true,
+    "preview": "/downloads/hjsolairnd-brochure-20261110.pdf",
+    "format": "PDF · 50쪽 · 2026-11-10",
+    "cover": "/images/brochure/airnd-overview.png"
+  },
+  {
+    "id": "aieg-brochure-20261110",
+    "title": "HJSolAIEG 기능별 브로셔",
+    "description": "공통 로그인, 업무 선택 포털, 홈페이지·포털·내부업무와 공통 AI 도우미를 화면별로 확인합니다. 통합 브로셔에서 제품별로 나눈 PDF입니다.",
+    "product": "hjsol-aieg",
+    "kind": "브로셔",
+    "status": "ready",
+    "href": "/downloads/hjsolaieg-brochure-20261110.pdf",
+    "download": true,
+    "preview": "/downloads/hjsolaieg-brochure-20261110.pdf",
+    "format": "PDF · 8쪽 · 2026-11-10",
+    "cover": "/images/brochure/aieg-overview.png"
+  },
+  {
     "id": "airnd-introduction",
     "title": "HJSolAIRND 솔루션 소개",
-    "description": "AI 화학 연구·분석 솔루션의 주요 기능과 활용 업무를 확인하세요.",
+    "description": "주요 기능과 실제 화면을 분류·검색하고 확대해서 살펴보세요.",
     "product": "ls-rnd",
-    "kind": "제품 소개",
+    "kind": "화면 소개",
     "status": "ready",
-    "href": "/products/ls-rnd/",
+    "href": "/products/ls-rnd/#screens",
     "download": false,
     "format": "웹",
     "cover": "/brand/airnd-intro.png"
@@ -14,11 +88,11 @@
   {
     "id": "aisp-introduction",
     "title": "HJSolAISP 솔루션 소개",
-    "description": "AI 통합 운영 솔루션의 주요 기능과 활용 업무를 확인하세요.",
+    "description": "주요 기능과 실제 화면을 분류·검색하고 확대해서 살펴보세요.",
     "product": "hjsol",
-    "kind": "제품 소개",
+    "kind": "화면 소개",
     "status": "ready",
-    "href": "/products/hjsol/",
+    "href": "/products/hjsol/#screens",
     "download": false,
     "format": "웹",
     "cover": "/brand/aisp-intro.png"
@@ -26,11 +100,11 @@
   {
     "id": "aieg-introduction",
     "title": "HJSolAIEG 솔루션 소개",
-    "description": "AI 전자정부 프레임워크의 주요 기능과 활용 업무를 확인하세요.",
+    "description": "주요 기능과 실제 화면을 분류·검색하고 확대해서 살펴보세요.",
     "product": "hjsol-aieg",
-    "kind": "제품 소개",
+    "kind": "화면 소개",
     "status": "ready",
-    "href": "/products/hjsol-aieg/",
+    "href": "/products/hjsol-aieg/#screens",
     "download": false,
     "format": "웹",
     "cover": "/brand/aieg-intro.png"

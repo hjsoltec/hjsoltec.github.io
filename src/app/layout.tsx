@@ -5,6 +5,7 @@ import { ownershipVerification } from "@/lib/seo";
 import { JsonLd } from "@/components/JsonLd";
 import "./globals.css";
 import "./brand.css";
+import "./brochure.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL(site.url), title: { default: site.title, template: "%s | HJSol" }, description: site.description,
