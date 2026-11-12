@@ -1,12 +1,12 @@
 {
   "name": "hjsol-company-website",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --hostname 0.0.0.0",
+    "dev": "node scripts/dev.mjs",
     "build": "node scripts/validate-content.mjs && next build --webpack && node scripts/postbuild.mjs",
     "typecheck": "tsc --noEmit",
-    "verify": "node scripts/verify-export.mjs && node scripts/verify-seo.mjs"
+    "verify": "node scripts/verify-export.mjs && node scripts/verify-seo.mjs && node scripts/verify-brochure.mjs"
   },
   "dependencies": {
     "next": "16.4.2",
